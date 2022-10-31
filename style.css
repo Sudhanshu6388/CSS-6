@@ -1,0 +1,201 @@
+#logo{
+    margin-top: 50px;
+    margin-left: 80px;
+    display: inline-block;   
+}
+#logo img{
+    width: 50px;
+    
+}
+#nav_right {
+float: right;
+display: inline;
+margin-top: 50px;
+margin-right: 10rem;
+}
+.fa-bars{
+    color: white;
+
+}
+#nav_right ul{
+    list-style: none;
+    align-items: center;
+
+}
+#nav_right li{
+    text-align: center;
+    display: inline;
+    margin: 3rem;
+
+}
+#nav_right a{
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    
+}
+#container{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+}
+#left_portion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#left_portion h1{
+    color: white;
+    font-size: 80px;
+    font-weight: bold;
+    margin-left: 80px;
+    margin-bottom: 10px;
+}
+#left_portion p{
+    color: white;
+    font-size: 20px;
+    position: relative;
+   margin-left: 80px;
+   margin-bottom: 5px;
+   line-height: 30px;
+}
+#btn{
+    background-color: white;
+    font-size: 11px;
+    font-weight: bold;
+    border: 1px solid white;
+    padding: 1rem 4rem;
+    border-radius: 30px;
+    margin-top: 1rem;
+    cursor: pointer;
+    margin-left: 60px;  
+
+}  
+#right_portion{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+}
+.block{
+    margin: 1rem;
+    width: 17rem;
+    height: 17rem;
+    position: relative;
+    left: 400px;
+}
+.block::before{
+    content:' ';
+    position: absolute;
+    top:0px;
+    right:0px;
+    left:0px;
+    bottom:0px;
+    background-repeat:no-repeat;
+    border-radius: 20px;
+    background-position: center;
+    opacity: 30%;
+}
+#block_1::before{
+
+background: url(https://www.beautifulworld.com/wp-content/uploads/2016/10/caravan-sahara-desert.jpg);
+    background-size: cover;
+}
+
+#block_2::before{
+    background: url("https://i0.wp.com/blog.frontiersin.org/wp-content/uploads/2017/03/shutterstock_227524918.jpg?fit=3077%2C2000&ssl=1");  
+    background-size:cover;
+}
+#block_3::before{
+    background: url("https://d3rr2gvhjw0wwy.cloudfront.net/uploads/mandators/49581/file-manager/camel-caravan-sahara-morocco.jpg");
+    background-size:cover;
+}
+#block_4::before{
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBVGTM2Vwydhnm4R0fwoQ_8cgGeazMboz3qA&usqp=CAU");
+    background-size:cover;
+}
+.content{
+
+        position: relative;
+        color: white;
+        margin: 0.5rem;
+    
+}
+.content p{
+    display: inline-block;
+    font-size: 13px;
+    line-height: 1.5rem;
+    margin-top: 1rem;
+}
+.block:hover{
+    width: 18rem;
+    height: 18rem;
+   box-shadow: 0.5px 0.5px 30px silver;
+   transform: scale(1s);
+}
+
+#btn:hover{
+    font-size: 15px;
+}
+@media only screen and (max-width:1290px) and (min-width:851px){
+
+    #container{
+        display: grid;
+        grid-template-columns: repeat(1,auto);
+    }
+
+    #right_portion{
+        display: grid;
+        grid-template-columns: repeat(1,auto);
+        justify-content: center;
+    }
+    .block{
+        margin: 1rem;
+        width: 37rem;
+        height: 20rem;
+    }
+    #block_4::before{
+        background-size: cover;
+        background-position: bottom;
+        background-repeat: no-repeat;
+    }
+}
+@media only screen and (max-width:850px) and (min-width:600px){
+    #container{
+        display: grid;
+        grid-template-columns: repeat(1,auto);
+    }
+    #right_portion{
+        display: grid;
+        grid-template-columns: repeat(1,auto);
+        justify-content: center;
+    }
+    .block{
+        margin: 1rem;
+        width: 17rem;
+        height: 17rem;
+    }
+    #nav_right ul{
+        display: block;
+    }
+    .block::before{
+        background-repeat:no-repeat;
+    }
+
+}
+@media only screen and (max-width:599px) and (min-width:100px){
+    #container{
+        display: grid;
+        grid-template-columns: repeat(1,auto);
+    }
+
+    #right_portion{
+        float: none;
+    }
+    #right_portion{
+        display: grid;
+        grid-template-columns: repeat(1,auto);
+        justify-content: center;
+    }
+    .block::before{
+        background-repeat:no-repeat;
+    }
+}   \
